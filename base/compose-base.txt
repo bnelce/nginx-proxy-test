@@ -12,20 +12,20 @@ services:
       - 80:80
       - 443:443
 
-  your_app_1:
-    image: your_app_1_image:latest
-    container_name: your_app_1
+  web1:
+    image: crccheck/hello-world:latest
+    container_name: web1
     expose:
-      - "80"
+      - "83"
 
-  your_app_2:
-    image: your_app_2_image:latest
-    container_name: your_app_2
+  web2:
+    image: crccheck/hello-world:latest
+    container_name: web2
     expose:
-      - "80"
+      - "84"
 
-  your_app_3:
-    image: your_app_3_image:latest
-    container_name: your_app_3
+  web3:
+    image: crccheck/hello-world:latest
+    container_name: web3
     expose:
-      - "80"
+      - "85"
